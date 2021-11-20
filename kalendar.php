@@ -148,9 +148,17 @@ echo '<?xml version="1.0" encoding="UTF-8" standalone="no"?>';
   xmlns:svg="http://www.w3.org/2000/svg"
   xmlns="http://www.w3.org/2000/svg">
   <style>
-    .weekday { font: bold <?php echo $fontsize;?>px times; fill: brown; }
-    .week { font: <?php echo $fontsize;?>px times; fill: black; }
-    .month { font: <?php echo $fontsize * 2;?>px times; fill: black; }
+    @font-face {
+        font-family: notos;
+        src: url('fonts/notoserif-regular.ttf');
+    }
+    text {
+        font-family: notos;
+        font-weight: bold;
+    }
+    .weekday { font: bold <?php echo $fontsize;?>px times; fill: brown;font-family: notos, times; }
+    .week { font: <?php echo $fontsize;?>px times; fill: black; font-family: notos, times;}
+    .month { font: <?php echo $fontsize * 2;?>px times; fill: black; font-family: notos, times;}
   </style>
   <line x1="<?php echo $margin + 4 * $step - $gap?>" y1="<?php echo $margin + 2 * $step - $gap;?>" x2="<?php echo $margin + 3.5 * $step;?>" y2="<?php echo $margin + 1.5 * $step;?>" style="stroke:<?php echo $colorpletenica;?>;stroke-width:10" />
 
@@ -207,7 +215,7 @@ month($margin + $step * 3.5,$margin + $step * 4.5, "okap");
 month($margin + $step * 5.5,$margin + $step * 4.5, "нoap");
 month($margin + $step * 3.5,$margin + $step * 6.5, "дekap");
 
-mrusnitsi($margin + $step * 1.5, $margin + $step * 0.5, "мръсници", $isleapbg);
+mrusnitsi($margin + $step * 1.5, $margin + $step * 0.5, "мръсни дни", $isleapbg);
 
 ?>
 
