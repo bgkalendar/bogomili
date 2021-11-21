@@ -72,9 +72,8 @@ $step = 115;
     <h2>Богомилско учение</h2>
     <a href="doc/bogomilstvo.doc">Богомилство</a>
   </div>
-  <br/> <br/>
-  <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
-  <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/> <div>
+  <!-- Tracker -->
+  <div style="margin-left:1em; padding-left: 1em;"><script src="https://efreecode.com/js.js" id="eXF-bogomili-0" async defer></script></div>
 </div>
 </body>
 </html>
