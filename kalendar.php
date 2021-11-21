@@ -138,7 +138,7 @@ function currentday() {
   else if ($monthbg ==  9) { $startx = $margin + $step *5.5; $starty = $margin + $step * 4.5; }
   else if ($monthbg == 10) { $startx = $margin + $step *3.5; $starty = $margin + $step * 6.5; }
   $x = $startx + (($daybg - 1 )% 6) * $cellsize;
-  $y = $starty + ($daybg / 6) * $cellsize + $cellsize; 
+  $y = $starty + ((($daybg - 1) - (($daybg - 1)%6))  / 6) * $cellsize + $cellsize; 
   echo "<rect x=\"".($x)."\" y=\"".($y)."\" width=\"".$cellsize."\" height=\"".$cellsize."\" style=\"fill:rgb(245,90,90);stroke-width:3;stroke:rgb(41,20,20)\" />\n";
 }
 
